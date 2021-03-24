@@ -11,6 +11,7 @@ var express = require('express');
 var exphbs  = require('express-handlebars');
 var mysql   = require('mysql');
 var path    = require('path');
+var settings = require('./public/js/settings');
 
 var app = express();
 
@@ -50,6 +51,8 @@ app.use('/scripts', express.static(`${__dirname}/node_modules/`));
 app.get('/', function(req,res) {
     res.render('index');
 });
+
+console.log('Admin email:' + settings.adminEmail);
 
 // Set Port
 app.set('port', (process.env.PORT || 3000));
