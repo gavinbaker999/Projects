@@ -8,9 +8,22 @@
 'use strict'
 
 var express = require('express');
+var exphbs  = require('express-handlebars');
 var mysql   = require('mysql');
+var path    = require('path');
 
 var app = express();
+
+// View Engine
+app.set('views', path.join(__dirname, 'views'));
+app.engine('handlebars', exphbs({defaultLayout:'layout'}));
+app.set('view engine', 'handlebars');
+
+// Set Static Folder
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Provide access to node_modules folder from the client-side
+app.use('/scripts', express.static(`${__dirname}/node_modules/`));
 
 //var connection = mysql.createConnection({
 //  host     : 'localhost',
@@ -35,7 +48,12 @@ var app = express();
 //connection.end();
 
 app.get('/', function(req,res) {
-	res.send("Hello World!!!");
+    res.render('index');
 });
 
-app.listen(4000,()=>console.log("Server started on port 4000"));
+// Set Port
+app.set('port', (process.env.PORT || 3000));
+
+app.listen(app.get('port'), function(){
+	console.log('Server started on port '+app.get('port'));
+});
