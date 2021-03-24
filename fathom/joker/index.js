@@ -26,27 +26,27 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Provide access to node_modules folder from the client-side
 app.use('/scripts', express.static(`${__dirname}/node_modules/`));
 
-//var connection = mysql.createConnection({
-//  host     : 'localhost',
-//  user     : 'me',
-//  password : 'secret',
-//  database : 'my_db'
-//});
+var connection = mysql.createConnection({
+  host     : 'localhost',
+  user     : 'root',
+  password : 'joidefoster',
+  database : 'jokes'
+});
  
-//connection.connect(function(err) {
-//	if (err) {
-//	  console.error('error connecting: ' + err.stack);
-//	  return;
-//	}   
-//	console.log('connected as id ' + connection.threadId);
-//}); 
+connection.connect(function(err) {
+	if (err) {
+	  console.error('error connecting: ' + err.stack);
+	  return;
+	}   
+	console.log('connected as id ' + connection.threadId);
+}); 
 
-//connection.query('SELECT 1 + 1 AS solution', function (error, results, fields) {
-//  if (error) throw error;
-//  console.log('The solution is: ', results[0].solution);
-//});
+connection.query('SELECT COUNT(*) FROM jsontest AS num', function (error, results, fields) {
+  if (error) throw error;
+  console.log('Total Number of Jokes: ', results[0].num);
+});
  
-//connection.end();
+connection.end();
 
 app.get('/', function(req,res) {
     res.render('index');
