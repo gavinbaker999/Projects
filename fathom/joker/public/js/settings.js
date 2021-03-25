@@ -1,7 +1,9 @@
-var uriDB = "mongodb+srv://gavinbaker:joide33@ehs0-ncww2.mongodb.net/endhousesoftware";
-var adminEmail = "endhousesoftware999@gmail.com";
+var dbHost = "localhost";
+var dbUser = "root";
+var dbPassword = "joidefoster";
 
 module.exports = {
-    uriDB,
-    adminEmail
+    dbHost,
+    dbUser,
+    dbPassword
 };

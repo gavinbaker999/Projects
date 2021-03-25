@@ -8,15 +8,16 @@
 'use strict'
 
 async function clickNextJoke() {
-    var retData = "";
+    const response = await $.post("/getjoke", function(data,status) {
+        var jokeParts = data.split("#");
 
-    const response = await $.post("/getjoke", {
-        key1 : "val1"
-    },
-    function(data,status) {
-        retData = data;
-        console.log("Next Joke: " + retData);
+        $("#jokepunchline").hide(); 
+
+        $("#joketext").text(jokeParts[0]); 
+        $("#jokepunchline").text(jokeParts[1]);
     });
+}
 
-    return retData;
+function clickShowPunchline() {
+    $("#jokepunchline").show();
 }

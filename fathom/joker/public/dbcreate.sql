@@ -2,17 +2,13 @@ CREATE DATABASE IF NOT EXISTS jokes;
 USE jokes;
 DROP TABLE IF EXISTS jokedata;
 CREATE TABLE jokedata(
-     jokeId INT NOT NULL UNIQUE,
+     jokeId VARCHAR(10) NOT NULL,
      jokeType VARCHAR(50) NOT NULL,
      jokeSetup VARCHAR(200) NOT NULL,
-     jokePunchline VARCHAR(200) NOT NULL,
-     PRIMARY KEY (jokeId)
+     jokePunchline VARCHAR(200) NOT NULL
      );
 LOAD DATA LOCAL INFILE 'jokes.csv' 
   INTO TABLE jokedata 
   FIELDS TERMINATED BY ',' 
-  ENCLOSED BY '"'
   LINES TERMINATED BY '\n'
-  IGNORE 1 ROWS
-  (@jokeId,jokeType,jokeSetup,jokePunchLine)
-  SET jokeId = CAST(@jokeId AS UNSIGNED);
+  IGNORE 1 ROWS;

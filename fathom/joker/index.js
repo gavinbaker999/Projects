@@ -32,9 +32,9 @@ app.get('/', function(req,res) {
 
 app.post('/getjoke', function(req,res) {
 	var connection = mysql.createConnection({
-		host     : 'localhost',
-		user     : 'root',
-		password : 'joidefoster',
+		host     : settings.dbHost,
+		user     : settings.dbUser,
+		password : settings.dbPassword,
 		database : 'jokes'
 	  });
 	   
@@ -49,7 +49,8 @@ app.post('/getjoke', function(req,res) {
 	  connection.query('USE jokes', function (error, results, fields) {
 		  if (error) throw error;
 	  });
-	  connection.query('SELECT * FROM jokedata ORDER BY RAND() LIMIT 1', function (error, results, fields) {
+
+	  connection.query('SELECT jokeSetup,jokePunchline FROM jokedata ORDER BY RAND() LIMIT 1', function (error, results, fields) {
 		if (error) throw error;
 		res.send(results[0].jokeSetup + "#" + results[0].jokePunchline);
 	  });
