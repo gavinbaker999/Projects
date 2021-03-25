@@ -8,11 +8,20 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-To run locally you need the [MySQL server](https://dev.mysql.com/downloads/) to be installed. 
+To run locally you need the [MySQL server](https://dev.mysql.com/downloads/) to be installed  - note the password you set for the user root. 
 
 ### Database Structure
 
-Use the **classes/common/dbcreate.sql** file to create the **MySQL** database and tables (you will need to edit the **dbcreate.sql** file to change the database name), and then place the database name, username and password in the following environment variables **LOCALDBNAME**, **LOCALDBUSER** and **LOCALDBPASSWORD**. Note: The database host is assumed to be **localhost** and the database table names can not be changed.
+To import joke data into database and create the jokedata table,
+
+    $mysql --local_infile=1 -u root -p < dbcreate.sql
+
+Note: If you recieve an error importing the joke data, you may have to check if the local_infile global variable is disabled. To enable local_infile,
+
+    mysql> SET GLOBAL local_infile=1;
+    Query OK, 0 rows affected (0.00 sec)
+
+The database host is assumed to be **localhost** and the database table name can not be changed.
 
 ## Build Procedures
 

@@ -8,8 +8,8 @@ CREATE TABLE jokedata(
      jokePunchline VARCHAR(200) NOT NULL,
      PRIMARY KEY (jokeId)
      );
-LOAD DATA INFILE 'jokes.csv' 
-  INTO TABLE discounts 
+LOAD DATA LOCAL INFILE 'jokes.csv' 
+  INTO TABLE jokedata 
   FIELDS TERMINATED BY ',' 
   ENCLOSED BY '"'
   LINES TERMINATED BY '\n'
