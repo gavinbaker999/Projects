@@ -26,33 +26,36 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Provide access to node_modules folder from the client-side
 app.use('/scripts', express.static(`${__dirname}/node_modules/`));
 
-var connection = mysql.createConnection({
-  host     : 'localhost',
-  user     : 'root',
-  password : 'joidefoster',
-  database : 'jokes'
-});
- 
-connection.connect(function(err) {
-	if (err) {
-	  console.error('error connecting: ' + err.stack);
-	  return;
-	}   
-	console.log('connected as id ' + connection.threadId);
-}); 
-
-connection.query('SELECT COUNT(*) FROM jsontest AS num', function (error, results, fields) {
-  if (error) throw error;
-  console.log('Total Number of Jokes: ', results[0].num);
-});
- 
-connection.end();
-
 app.get('/', function(req,res) {
     res.render('index');
 });
 
-console.log('Admin email:' + settings.adminEmail);
+app.post('/getjoke', function(req,res) {
+	var connection = mysql.createConnection({
+		host     : 'localhost',
+		user     : 'root',
+		password : 'joidefoster',
+		database : 'jokes'
+	  });
+	   
+	  connection.connect(function(err) {
+		  if (err) {
+			console.error('error connecting: ' + err.stack);
+			return;
+		  }   
+		  console.log('connected as id ' + connection.threadId);
+	  }); 
+	  
+	  connection.query('USE jokes', function (error, results, fields) {
+		  if (error) throw error;
+	  });
+	  connection.query('SELECT * FROM jokedata ORDER BY RAND() LIMIT 1', function (error, results, fields) {
+		if (error) throw error;
+		res.send(results[0].jokeSetup + "#" + results[0].jokePunchline);
+	  });
+		 
+	  connection.end();	  
+});
 
 // Set Port
 app.set('port', (process.env.PORT || 3000));
