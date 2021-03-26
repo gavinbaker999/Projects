@@ -2,7 +2,7 @@ CREATE DATABASE IF NOT EXISTS jokes;
 USE jokes;
 DROP TABLE IF EXISTS jokedata;
 CREATE TABLE jokedata(
-     jokeId VARCHAR(10) NOT NULL,
+     jokeId INT NOT NULL,
      jokeType VARCHAR(50) NOT NULL,
      jokeSetup VARCHAR(200) NOT NULL,
      jokePunchline VARCHAR(200) NOT NULL
