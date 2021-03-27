@@ -48,11 +48,15 @@ app.post('/getjoke', function(req,res) {
 	  
 	  connection.query('USE jokes', function (error, results, fields) {
 		  if (error) throw error;
+	  }).catch((error) => {
+		  console.error('MySQL Query Error Message: ${error}');
 	  });
 
 	  connection.query('SELECT jokeSetup,jokePunchline FROM jokedata ORDER BY RAND() LIMIT 1', function (error, results, fields) {
 		if (error) throw error;
 		res.send(results[0].jokeSetup + "#" + results[0].jokePunchline);
+	  }).catch((error) => {
+		console.error('MySQL Query Error Message: ${error}');
 	  });
 		 
 	  connection.end();	  
