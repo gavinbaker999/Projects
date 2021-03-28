@@ -1,0 +1,13 @@
+C:\Documents and Settings\gavin\My Documents\Visual Studio 2005\Projects\DatFileEditor\DatFileEditor\obj\Release\DatFileEditor.exe
+C:\Documents and Settings\gavin\My Documents\Visual Studio 2005\Projects\DatFileEditor\DatFileEditor\obj\Release\DatFileEditor.pdb
+C:\Documents and Settings\gavin\My Documents\Visual Studio 2005\Projects\DatFileEditor\DatFileEditor\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\gavin\My Documents\Visual Studio 2005\Projects\DatFileEditor\DatFileEditor\obj\Release\DatFileEditor.Form1.resources
+C:\Documents and Settings\gavin\My Documents\Visual Studio 2005\Projects\DatFileEditor\DatFileEditor\obj\Release\DatFileEditor.Properties.Resources.resources
+C:\Documents and Settings\gavin\My Documents\Visual Studio 2005\Projects\DatFileEditor\DatFileEditor\obj\Release\DatFileEditor.csproj.GenerateResource.Cache
+C:\Documents and Settings\gavin\My Documents\Visual Studio 2005\Projects\DatFileEditor\DatFileEditor\bin\Release\DatFileEditor.exe
+C:\Documents and Settings\gavin\My Documents\Visual Studio 2005\Projects\DatFileEditor\DatFileEditor\bin\Release\DatFileEditor.pdb
+C:\Documents and Settings\gavin\My Documents\Visual Studio 2005\Projects\DatFileEditor\DatFileEditor\obj\Release\DatFileEditor.AboutBox1.resources
+C:\Documents and Settings\gavin\My Documents\Visual Studio 2005\Projects\DatFileEditor\DatFileEditor\bin\Release\DatFileEditor.exe.manifest
+C:\Documents and Settings\gavin\My Documents\Visual Studio 2005\Projects\DatFileEditor\DatFileEditor\bin\Release\DatFileEditor.application
+C:\Documents and Settings\gavin\My Documents\Visual Studio 2005\Projects\DatFileEditor\DatFileEditor\obj\Release\DatFileEditor.exe.manifest
+C:\Documents and Settings\gavin\My Documents\Visual Studio 2005\Projects\DatFileEditor\DatFileEditor\obj\Release\DatFileEditor.application

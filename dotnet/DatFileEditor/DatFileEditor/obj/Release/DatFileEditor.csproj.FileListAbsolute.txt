@@ -1,0 +1,8 @@
+C:\Users\Gavin\development\Visual C#\DatFileEditor\DatFileEditor\obj\Release\DatFileEditor.csprojAssemblyReference.cache
+C:\Users\Gavin\development\Visual C#\DatFileEditor\DatFileEditor\obj\Release\DatFileEditor.AboutBox1.resources
+C:\Users\Gavin\development\Visual C#\DatFileEditor\DatFileEditor\obj\Release\DatFileEditor.Form1.resources
+C:\Users\Gavin\development\Visual C#\DatFileEditor\DatFileEditor\obj\Release\DatFileEditor.Properties.Resources.resources
+C:\Users\Gavin\development\Visual C#\DatFileEditor\DatFileEditor\obj\Release\DatFileEditor.csproj.GenerateResource.cache
+C:\Users\Gavin\development\Visual C#\DatFileEditor\DatFileEditor\obj\Release\DatFileEditor.csproj.CoreCompileInputs.cache
+C:\Users\Gavin\development\Visual C#\DatFileEditor\DatFileEditor\obj\Release\DatFileEditor.exe
+C:\Users\Gavin\development\Visual C#\DatFileEditor\DatFileEditor\obj\Release\DatFileEditor.pdb

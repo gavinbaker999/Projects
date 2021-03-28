@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SearchTracker.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="FTPUserName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ftpusername</Value>
+    </Setting>
+    <Setting Name="FTPPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ftppassword</Value>
+    </Setting>
+    <Setting Name="FTPServer" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ftpserver</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
