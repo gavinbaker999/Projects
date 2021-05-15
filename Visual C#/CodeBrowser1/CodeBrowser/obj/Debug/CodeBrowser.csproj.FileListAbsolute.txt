@@ -1,0 +1,8 @@
+C:\Users\Gavin\development\Visual C#\CodeBrowser\CodeBrowser\obj\Debug\CodeBrowser.exe
+C:\Users\Gavin\development\Visual C#\CodeBrowser\CodeBrowser\obj\Debug\CodeBrowser.pdb
+C:\Users\Gavin\development\Visual C#\CodeBrowser\CodeBrowser\bin\Debug\CodeBrowser.exe
+C:\Users\Gavin\development\Visual C#\CodeBrowser\CodeBrowser\bin\Debug\CodeBrowser.pdb
+C:\Users\Gavin\development\Visual C#\CodeBrowser\CodeBrowser\obj\Debug\CodeBrowser.Form1.resources
+C:\Users\Gavin\development\Visual C#\CodeBrowser\CodeBrowser\obj\Debug\CodeBrowser.Properties.Resources.resources
+C:\Users\Gavin\development\Visual C#\CodeBrowser\CodeBrowser\obj\Debug\CodeBrowser.csproj.GenerateResource.Cache
+C:\Users\Gavin\development\Visual C#\CodeBrowser\CodeBrowser\obj\Debug\CodeBrowser.csprojResolveAssemblyReference.cache

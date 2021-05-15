@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+	<codeoutline name="hdlworkbench.java" date="13/10/2013" description="This is the file description">
+		<class name="mainCard" description="This is the class description">
+		<variable description="This is the first variable description"  access="private" type="JButton" defvalue="" name="newBut,openBut,saveBut,compileBut,simulateBut,helpBut">
+		</variable>
+		<variable description=""  access="private" type="JTextField" defvalue="" name="systemnameTF">
+		</variable>
+		<variable description=""  access="private" type="JTextArea" defvalue="" name="statusTA">
+		</variable>
+		<variable description=""  access="private" type="hdlSyntaxEditorPane" defvalue="" name="HDLTA">
+		</variable>
+		<variable description=""  access="private" type="JList" defvalue="" name="compilers">
+		</variable>
+		<variable description=""  access="private" type="DefaultListModel" defvalue="" name="compilersM">
+		</variable>
+		<variable description=""  access="private" type="JScrollPaneEHS" defvalue="" name="statusScrollPane">
+		</variable>
+		<variable description=""  access="private" type="JSpinner" defvalue="" name="startTime,stopTime">
+		</variable>
+		<variable description=""  access="private" type="String" defvalue="'ms'" name="timeUnit">
+		</variable>
+		<variable description=""  access="private" type="JRadioButton[]" defvalue="new JRadioButton[4]" name="timeButtons">
+		</variable>
+		<variable description=""  access="private" type="String" defvalue="{'ns','us','ms','secs'}" name="timeLabels[]">
+		</variable>
+		<variable description=""  access="private" type="ButtonGroup" defvalue="new ButtonGroup()" name="timeGroup">
+		</variable>
+		<function description="This is the first function description" access="public" rettype="void" params="" name="updateMainCard">
+		</function>
+		<function description="" access="public" rettype="void" params="ChangeEvent evt" name="stateChanged">
+		</function>
+		<function description="" access="public" rettype="void" params="ListSelectionEvent evt" name="valueChanged">
+		</function>
+		<function description="" access="public" rettype="void" params="ItemEvent evt" name="itemStateChanged">
+		</function>
+		<function description="" access="public" rettype="void" params="ActionEvent evt" name="actionPerformed">
+		</function>
+		<function description="" access="public" rettype="void" params="KeyEvent evt" name="keyTyped">
+		</function>
+		<function description="" access="public" rettype="void" params="KeyEvent evt" name="keyReleased">
+		</function>
+		<function description="" access="public" rettype="void" params="KeyEvent evt" name="keyPressed">
+		</function>
+		<function description="" access="public" rettype="void" params="" name="hdlSystemNew">
+		</function>
+		<function description="" access="public" rettype="void" params="" name="hdlSystemOpen">
+		</function>
+		<function description="" access="public" rettype="void" params="String msg" name="addStatusMsg">
+		</function>
+		<function description="" access="public" rettype="boolean" params="boolean bForceSave" name="hdlSystemSave">
+		</function>
+		<function description="" access="public" rettype="void" params="" name="hdlSystemCompile">
+		</function>
+		<function description="" access="public" rettype="void" params="" name="hdlSystemSimulate">
+		</function>
+		<function description="" access="public" rettype="void" params="" name="displaySystemName">
+		</function>
+		</class>
+		<global line="public void multiColumnCanvasTest"/>
+		<global line="public String displayLogonDialog"/>
+		<global line="public MenuItem getMenuItem"/>
+		<global line="public void deleteHelpTopics"/>
+		<global line="public void updateHelpTopics"/>
+		<global line="public void displayFAQ"/>
+		<global line="public int getRankedHelpTopics"/>
+		<global line="public void displayHelpTopics"/>
+		<global line="public String base64Encode"/>
+		<global line="public Serializable base64Decode"/>
+	</codeoutline>

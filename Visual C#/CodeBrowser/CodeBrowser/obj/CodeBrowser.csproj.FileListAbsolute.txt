@@ -1,0 +1,16 @@
+C:\Documents and Settings\gavin\My Documents\Visual Studio 2005\Projects\CodeBrowser\CodeBrowser\bin\Release\CodeBrowser.exe
+C:\Documents and Settings\gavin\My Documents\Visual Studio 2005\Projects\CodeBrowser\CodeBrowser\bin\Release\CodeBrowser.pdb
+C:\Documents and Settings\gavin\My Documents\Visual Studio 2005\Projects\CodeBrowser\CodeBrowser\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\gavin\My Documents\Visual Studio 2005\Projects\CodeBrowser\CodeBrowser\obj\Release\CodeBrowser.Form1.resources
+C:\Documents and Settings\gavin\My Documents\Visual Studio 2005\Projects\CodeBrowser\CodeBrowser\obj\Release\CodeBrowser.Properties.Resources.resources
+C:\Documents and Settings\gavin\My Documents\Visual Studio 2005\Projects\CodeBrowser\CodeBrowser\obj\Release\CodeBrowser.csproj.GenerateResource.Cache
+C:\Documents and Settings\gavin\My Documents\Visual Studio 2005\Projects\CodeBrowser\CodeBrowser\obj\Release\CodeBrowser.exe
+C:\Documents and Settings\gavin\My Documents\Visual Studio 2005\Projects\CodeBrowser\CodeBrowser\obj\Release\CodeBrowser.pdb
+C:\Documents and Settings\gavin\My Documents\Visual Studio 2005\Projects\CodeBrowser\CodeBrowser\bin\Debug\CodeBrowser.exe
+C:\Documents and Settings\gavin\My Documents\Visual Studio 2005\Projects\CodeBrowser\CodeBrowser\bin\Debug\CodeBrowser.pdb
+C:\Documents and Settings\gavin\My Documents\Visual Studio 2005\Projects\CodeBrowser\CodeBrowser\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\gavin\My Documents\Visual Studio 2005\Projects\CodeBrowser\CodeBrowser\obj\Debug\CodeBrowser.Form1.resources
+C:\Documents and Settings\gavin\My Documents\Visual Studio 2005\Projects\CodeBrowser\CodeBrowser\obj\Debug\CodeBrowser.Properties.Resources.resources
+C:\Documents and Settings\gavin\My Documents\Visual Studio 2005\Projects\CodeBrowser\CodeBrowser\obj\Debug\CodeBrowser.csproj.GenerateResource.Cache
+C:\Documents and Settings\gavin\My Documents\Visual Studio 2005\Projects\CodeBrowser\CodeBrowser\obj\Debug\CodeBrowser.exe
+C:\Documents and Settings\gavin\My Documents\Visual Studio 2005\Projects\CodeBrowser\CodeBrowser\obj\Debug\CodeBrowser.pdb
