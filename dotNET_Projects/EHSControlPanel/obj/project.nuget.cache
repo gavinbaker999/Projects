@@ -1,8 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "EaO0Dpj135DqxKqOwoJtkNMlifLenLVc5KIdE8FCmQIZJQzfLeHnwY1VOdFzP4zBV1ik1gxij9UxM/FFYrtqDw==",
+  "dgSpecHash": "4iw+WKrdRni0dbvsoziGbvC6VOHDXYxomsRKmde/PzAdza3lWbkZKODIBH8YznDrkJwGGkCo1/thSSwgkK1PPQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Gavin\\development\\publicprojects\\Projects\\dotNET_Projects\\EHSControlPanel\\EHSControlPanel.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Gavin\\.nuget\\packages\\graphql.client\\3.2.3\\graphql.client.3.2.3.nupkg.sha512",
+    "C:\\Users\\Gavin\\.nuget\\packages\\graphql.client.abstractions\\3.2.3\\graphql.client.abstractions.3.2.3.nupkg.sha512",
+    "C:\\Users\\Gavin\\.nuget\\packages\\graphql.client.abstractions.websocket\\3.2.3\\graphql.client.abstractions.websocket.3.2.3.nupkg.sha512",
+    "C:\\Users\\Gavin\\.nuget\\packages\\graphql.client.serializer.newtonsoft\\3.2.3\\graphql.client.serializer.newtonsoft.3.2.3.nupkg.sha512",
+    "C:\\Users\\Gavin\\.nuget\\packages\\graphql.primitives\\3.2.3\\graphql.primitives.3.2.3.nupkg.sha512",
+    "C:\\Users\\Gavin\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Gavin\\.nuget\\packages\\system.reactive\\4.3.2\\system.reactive.4.3.2.nupkg.sha512"
+  ],
   "logs": []
 }

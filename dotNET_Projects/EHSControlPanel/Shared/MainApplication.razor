@@ -1,0 +1,36 @@
+<div class="alert alert-secondary mt-4" role="alert">
+    <span class="oi oi-pencil mr-2" aria-hidden="true"></span>
+    <strong>@Title</strong>
+
+    @if (ehsApiVersion == null)
+    {
+        <p><em>Loading...</em></p>
+    } else {
+        <p>EHS API Version:@ehsApiVersion</p>
+    }
+</div>
+
+@code {
+    // Demonstrates how a parent component can supply parameters
+    [Parameter]
+    public string Title { get; set; }
+
+    private string ehsApiVersion = null;
+
+    protected override async Task OnInitializedAsync()
+    {
+        // To use NewtonsoftJsonSerializer, add a reference to NuGet package GraphQL.Client.Serializer.Newtonsoft
+        var graphQLClient = new GraphQLHttpClient("https://ehsapi.herokuapp.com/api", new NewtonsoftJsonSerializer());
+
+        var versionRequest = new GraphQLRequest {
+            Query = @"
+            {
+	            version
+            }"
+        };
+
+        var graphQLResponse = await graphQLClient.SendQueryAsync<string>(versionRequest);
+        ehsApiVersion = graphQLResponse.Data.version;
+    }
+
+}
