@@ -112,12 +112,24 @@ using EHSControlPanel.Shared;
 
     private string ehsApiVersion = null;
 
+    public class ResponseType {
+        public string version {get;set;}
+    }
+
     protected override async Task OnInitializedAsync()
     {
         // To use NewtonsoftJsonSerializer, add a reference to NuGet package GraphQL.Client.Serializer.Newtonsoft
         var graphQLClient = new GraphQLHttpClient("https://ehsapi.herokuapp.com/api", new NewtonsoftJsonSerializer());
 
-        //forecasts = await ForecastService.GetForecastAsync(DateTime.Now);
+        var versionRequest = new GraphQL.GraphQLRequest {
+            Query = @"
+            {
+	            version
+            }"
+        };
+
+        var graphQLResponse = await graphQLClient.SendQueryAsync<ResponseType>(versionRequest);
+        ehsApiVersion = graphQLResponse.Data.version;
     }
 
 
