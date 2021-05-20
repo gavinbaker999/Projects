@@ -104,7 +104,7 @@ using EHSControlPanel.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 13 "C:\Users\Gavin\development\publicprojects\Projects\dotNET_Projects\EHSControlPanel\Shared\MainApplication.razor"
+#line 12 "C:\Users\Gavin\development\publicprojects\Projects\dotNET_Projects\EHSControlPanel\Shared\MainApplication.razor"
        
     // Demonstrates how a parent component can supply parameters
     [Parameter]

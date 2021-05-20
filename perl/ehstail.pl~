@@ -1,0 +1,26 @@
+#!/usr/bin/perl -w
+
+print "EHS Tail Utility. Version 1.00\n";
+print "(c) End House Software 2009\n\n";
+
+if (@ARGV != 1) {die "usage: perl ehstail.pl filename\n";}
+$a = $ARGV[0];
+
+$totallinenum = 0;
+$displaylines = 10;
+
+open(IN,"$a") || die "Can't open file for reading $a\n";
+while (<IN>) {
+	$totallinenum++;
+}
+close(IN);
+$lnenum = 0;
+open(IN,"$a") || die "Can't open file for reading $a\n";
+while (<IN>) {
+	$linenum++;
+	if ($linenum > ($totallinenum - $displaylines)) {
+		print "$_";
+	}
+}
+close(IN);
+
