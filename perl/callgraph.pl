@@ -8,7 +8,7 @@ open(IN,"$a") || die "Can't open file for reading $a\n";
 open(OUT,">$a.out") || die "Can't open file for writing $a.out\n";
 
 print "JAVA Call Graph Version 1.00\n";
-print "(c) End House Software 2009\n";
+print "(c) End House Software 2020\n";
 
 #  $foo = CallGraphNode->new();
 

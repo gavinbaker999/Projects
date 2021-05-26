@@ -1,3 +1,5 @@
+# CallGraphNode.pm (c) End House Software 2020
+
 package CallGraphNode;
 require Exporter;
 @ISA = qw(Exporter);
