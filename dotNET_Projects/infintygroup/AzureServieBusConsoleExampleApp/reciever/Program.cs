@@ -7,7 +7,6 @@ namespace reciever
     class Program
     {
         // connection string to your Service Bus namespace
-        // connection string to your Service Bus namespace
         static string connectionString = "Endpoint=sb://endhousesoftware.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=n2epOdHF2rE5VNQmVVoyHiYbu5oFT2hq4Q29HzHmD6c=";
 
         // name of your Service Bus queue
