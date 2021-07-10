@@ -8,6 +8,9 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using Azure.Messaging.ServiceBus;
+using Microsoft.PowerPlatform.Dataverse.Client;
+using Microsoft.Xrm.Sdk.Query;
+using System.Linq;
 
 namespace InfinityAZ
 {
@@ -20,11 +23,21 @@ namespace InfinityAZ
         {
             log.LogInformation("C# HTTP trigger function processed a request.");
 
+            string info = "Dynamics 365 coonect failed.";
+
+            const string clientId = "dd7b008a-23a2-4c58-93b4-35059d00b946";
+            const string clientSecret = "lJ1XCDv_6ECAM2UU7QkEyXNIx~yp_6~0X1";
+            const string environment = "orgdcfcc54b.crm11";
+            var connectionString = @$"Url=https://{environment}.dynamics.com;AuthType=ClientSecret;ClientId={clientId};ClientSecret={clientSecret};RequireNewInstance=true";
+            using var serviceClient = new ServiceClient(connectionString);
+            if (serviceClient!=null && serviceClient.IsReady)
+            {
+                info = "Dynamics 365 connect success.";
+            }
+
             await SendQueueMessage("Gavin,Baker,endhousesoftware999@gmail.com,ID45");
 
-            string responseMessage = "This HTTP triggered function executed successfully.";
-
-            return new OkObjectResult(responseMessage);
+            return new OkObjectResult(info);
         }
 
         public static async Task SendQueueMessage(string msg)
